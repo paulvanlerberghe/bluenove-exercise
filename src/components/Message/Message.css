@@ -1,0 +1,26 @@
+.message {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.message .box {
+  border-radius: 15px;
+  margin-bottom: 5px;
+  padding: 10px 20px 15px;
+  box-sizing:border-box;
+  background-color: #fff;
+  display: inline-block;
+  text-align: left;
+  max-width: 300px;
+}
+.message .author {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+}
+.message .date {
+  font-size: 11px;
+  display: block;
+}
+.message p {
+  margin:0;
+}
