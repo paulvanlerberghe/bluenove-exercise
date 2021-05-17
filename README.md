@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Don't forget !
+
+This project use a file `.env` at the root of the directory. Don't forget to create it and include your Google Translation API like this :
+`REACT_APP_GOOGLE_TRANSLATE_API_KEY="YOUR_GOOGLE_KEY_API"`
+
 ## Available Scripts
 
 In the project directory, you can run:
