@@ -13,7 +13,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     
+    //let's populate our state with some messages
     this.state = {
+      //can be "off", "en", or "fr"
       translateMode: "off",
       pending: false,
       username: "Jack",
@@ -36,6 +38,7 @@ class App extends React.Component {
 
 
   handleSubmit(text, translateMode) {
+    //handle the message typed by the user and translate it if necessary 
     const url = `https://translation.googleapis.com/language/translate/v2`;
     const target = translateMode;
     const source = translateMode === "en" ? "fr" : "en";
@@ -55,9 +58,10 @@ class App extends React.Component {
       fetch(url, options)
         .then(response => response.json())
         .then(response => {
-          console.log(response.data)
+
           this.setState({
             pending: false,
+            //let's keep immutable...
             messages: [
               ...this.state.messages,
               {
@@ -72,6 +76,7 @@ class App extends React.Component {
         .catch(error => {
           this.setState({
             pending: false,
+            //show error returned by google if necessary
             messages: [
               ...this.state.messages,
               {

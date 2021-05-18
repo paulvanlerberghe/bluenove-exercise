@@ -5,6 +5,8 @@ import "./MessageForm.css";
 import { useInput } from "../../hooks/input-hook";
 
 const MessageForm = ({ onHandleSubmit, pending }) => {
+
+  //We use a custom hook here, it'll help to keep ours inputs simple
   const { value, bind, reset } = useInput("");
 
   const [translateMode, setTranslateMode] = useState("off");
