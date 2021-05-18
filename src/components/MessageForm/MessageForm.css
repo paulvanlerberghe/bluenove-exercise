@@ -2,7 +2,6 @@
   max-width: 960px;
   margin: 10px auto 0;
   box-sizing: border-box;
-
 }
 
 .message-form .line {
@@ -30,7 +29,7 @@
   width: 100%;
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: #FFF;
+  background-color: #fff;
   color: #000;
   font-size: 16px;
   border: 0;
@@ -44,12 +43,12 @@
   padding: 10px 20px;
   border-radius: 20px;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
 
 .message-form input[type="submit"]:disabled {
-  background-color: #BBB;
+  background-color: #bbb;
   cursor: auto;
 }

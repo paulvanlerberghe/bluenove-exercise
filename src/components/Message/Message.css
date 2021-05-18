@@ -6,7 +6,7 @@
   border-radius: 15px;
   margin-bottom: 5px;
   padding: 10px 20px 15px;
-  box-sizing:border-box;
+  box-sizing: border-box;
   background-color: #fff;
   display: inline-block;
   text-align: left;
@@ -22,5 +22,5 @@
   display: block;
 }
 .message p {
-  margin:0;
+  margin: 0;
 }

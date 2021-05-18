@@ -1,6 +1,6 @@
 import "./Message.css";
 
-const Message = ({message}) => {
+const Message = ({ message }) => {
   return (
     <div className="message">
       <div className="box">
