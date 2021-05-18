@@ -13,7 +13,7 @@ const MessageForm = ({ onHandleSubmit, pending }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onHandleSubmit(value, translateMode);
+    value !== "" && onHandleSubmit(value, translateMode);
     reset();
   };
 
@@ -51,7 +51,7 @@ const MessageForm = ({ onHandleSubmit, pending }) => {
         </div>
         <div className="line">
           <input type="text" maxLength={120} placeholder="Taper message" {...bind} />
-          <input type="submit" value={pending ? "En cours..." : "Envoyez"} disabled={pending} />
+          <input type="submit" value={pending ? "En cours..." : "Envoyez"} disabled={pending || value === ""} />
         </div>
       </form>
     </div>
